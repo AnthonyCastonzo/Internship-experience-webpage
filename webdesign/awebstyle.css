@@ -118,14 +118,18 @@ body {
 	float:left;
 	margin-left: 60px;
 }
+
 .gamewrap {
-	width:44%;
-	float:left;
-	margin:0px 15px 20px 15px;
-	height:163px;
-	border:1px solid white;
-	padding-left:15px;
-	padding-right:15px;
+    width: 43%;
+    margin: 0% 3% 20px 3%;
+    height: 163px;
+    border: 1px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: black;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
 }
 .game {
 	text-align:center;
@@ -134,11 +138,13 @@ body {
 }
 .gamerev {
 	font-family:tahoma;
+	color:#e4fffc;
 }
 #battle {
 	color:red;
 	text-align:center;
 	font-size:21px;
+
 }
 
 table, th, td {border:2px solid grey;}

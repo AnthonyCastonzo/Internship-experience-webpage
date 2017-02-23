@@ -1,0 +1,31 @@
+body {
+	background-color:black;
+	text-align:center;
+}
+.starwrap {
+    height: 80px;
+    background-image: url(https://img.clipartfest.com/217ec89421f0fe84e68be97468712eaf_dark-gold-star-clipart-gold-star-clipart-images_800-800.png);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+#wickstarwrap {
+    width: 320px;
+    background-size: 25%;
+    margin-left:420px;
+}
+#moanastarwrap {
+    width:400px;
+    background-size: 20%;
+    margin-left:380;
+}
+.movtitle {
+	margin-top:15px;
+	font-size:25px;
+	color:#bfb9aa;
+}
+.movreview {
+	margin-bottom:30px;
+	color:#bfb9aa;
+	margin-left: 75px;
+    margin-right: 75px;
+}
