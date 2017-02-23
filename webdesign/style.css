@@ -1,0 +1,74 @@
+body {
+	background-color: #35667d;
+}
+.category {
+	color:rgba(0, 255, 236, 0.77);
+	font-size: 27px;
+	text-align:center;
+}
+#menu {
+	color:blue;
+	display:flex;
+	border:1px solid blue;
+	padding: 4px 15px 4px 15px;
+}
+.title {
+	width:200px;
+	border:2px solid blue;
+	background-color: #00dcff;
+	height:50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height:55px;
+}
+.socialmedia{
+	width:50%;
+	text-align: center;
+}
+#smicons {
+	display:flex;
+}
+#top5title{
+	color:grey;
+	font-size: 20px;
+	margin-bottom: 16px;
+	margin-top: 12px;
+}
+#charinsta {
+	text-align: center;
+}
+#charbottomwrap{
+	margin-top:50px;
+	margin-bottom:20px;
+	height:200px;
+}
+#top5wrapper {
+	height:200px;
+	width:40%;
+	float:left;
+}
+#charlesbooks {
+	font-size: 31px;
+	text-align: center;
+	line-height: 187px;
+	height:200px;
+	margin-left: 40%;
+	border:4px solid blue;
+}
+#movrevtable {
+	width:100%;
+}
+
+#movradarwrap {
+	width:70%;
+	float:left;
+}
+#sequel {
+	margin-left: 70%
+}
+
+
+table, th, td {border:2px solid grey;}
+
+h1 {align-items: center}
