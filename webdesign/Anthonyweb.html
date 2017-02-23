@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>The Anthony Castonzo Webpage</title>
-		<link rel='stylesheet' href='../Internship-experience/webdesign/style.css'>
+		<link rel='stylesheet' href='../webdesign/awebstyle.css'>
 	</head>
 	<body>
 		<div id='intro'>
@@ -42,10 +42,16 @@
 			<h2 id='charles'>Charles</h2>
 		</div>
 		<div id='charinsta'>
-			<a href='https://www.instagram.com/charlestdog/' target='_blank'>
-				Charles's Latest Modeling Photos<br>
-				<img src="https://scontent.cdninstagram.com/t51.2885-19/s150x150/13256708_884900114972312_1497480651_a.jpg">
-			</a>
+			<div id='charmodel'>
+				<a href='https://www.instagram.com/charlestdog/' target='_blank'>
+				MY LATEST MODELING PHOTOS<br>
+				</a>
+			</div>
+			<div id='charpic'>
+				<a href='https://www.instagram.com/charlestdog/' target='_blank'>
+					<img src="https://scontent.cdninstagram.com/t51.2885-19/s150x150/13256708_884900114972312_1497480651_a.jpg">
+				</a>
+			</div>
 		</div>
 		<div id='charbottomwrap'>
 			<div id='top5wrapper'>
@@ -86,22 +92,22 @@
 					<td>2/12/17</td>
 					<td>91%</td>
 					<td>4 stars</td>
-					<td>Link to Review</td>
+					<td><a href='../webdesign/moviereviews.html'>Review</a></td>				
 				</tr>
 				<tr>
 					<td><img src="https://lumiere-a.akamaihd.net/v1/images/moana-fallback_fde4d101.jpeg?region=0,0,1536,691&amp;width=1200" alt="Moana" width="63.8" height="28.7"></td>
 					<td>1/20/17</td>
 					<td>95%</td>
 					<td>5 stars</td>
-					<td>Link to Review</td>				
+					<td><a href='../webdesign/moviereviews.html'>Review</a></td>				
 				</tr>
 			</table>
 		</div>
 		<div id='movradarwrap'>
-			<div>
+			<div id='radartitle'>
 				Movies On My Radar
 			</div>
-			<div>
+			<div id='movradar'>
 				<a href='http://www.imdb.com/title/tt4116284/?ref_=nv_sr_1' target='_blank'><img alt="The LEGO Batman Movie" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_UX182_CR0,0,182,268_AL_.jpg" width='100'></a>
 				<a href='http://www.imdb.com/title/tt3315342/?ref_=fn_al_tt_1'><img alt="Logan" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1MjkzMjczMV5BMl5BanBnXkFtZTgwNDk4NjYyMTI@._V1_UX182_CR0,0,182,268_AL_.jpg" width='100'></a>
 				<a href='http://www.imdb.com/title/tt3731562/?ref_=nv_sr_1'><img alt="Kong: Skull Island" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwMzI5ODEwNF5BMl5BanBnXkFtZTgwNjAzNjI2MDI@._V1_UX182_CR0,0,182,268_AL_.jpg" width='100'></a>
@@ -110,7 +116,8 @@
 			</div>
 		</div>
 		<div id='sequel'>
-			<p>Include link with title "think your favorite movie deserves a sequel?" that directs to 'what's the sequel' podcast.</p>
+			Think your favorite movie<br>
+			 deserves a sequel?
 		</div>
 
 		<hr>
@@ -118,51 +125,58 @@
 		<div class='category'>
 			<h2 id='tv'>TV</h2>
 		</div>
-		<div id='suggestform'
+		<div id='suggestform'>
 			<form action='castonzo99@gmail.com'>
 				TV suggestion:
 				<input type='text' name='tvsuggest'><br>
 				Why?:
 				<input type='text' name='tvreason'><br>
-				<br>
 				<input type='submit' value='SUGGEST'>
 			</form>
 		</div>
-		<div class='tvrev' id='flash'>
-			<a href='/Users/acastonzo/Projects/Internship-experience/webdesign/flash.html'>THE FLASH</a>
+		<div id='tvreviews'>
+			<div class='tvrev' id='flash'>
+				<a href='/Users/acastonzo/Projects/Internship-experience/webdesign/flash.html'><img alt="The Flash" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3NTgwNTA4NF5BMl5BanBnXkFtZTgwMDQ0MDUxMDI@._V1_UY268_CR16,0,182,268_AL_.jpg" height='150'></a>
+			</div>
+			<div class='tvrev' id='bachelor'>
+				<a><img alt="The Bachelor" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOGU3ZjYwYmQtNTdjMi00MmVkLThhYjktZTNhYjM3NTBlNDdhXkEyXkFqcGdeQXVyMzAzNTY3MDM@._V1_UX182_CR0,0,182,268_AL_.jpg" height='150'"></a>
+			</div>
+			<div class='tvrev' id='strange'>
+				<a><img alt="Stranger Things" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_UX182_CR0,0,182,268_AL_.jpg" height='150'></a>
+			</div>
+			<div class='tvrev' id='teenwolf'>
+				<a><img alt="Teen Wolf" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQ3NzA3ODQ5Ml5BMl5BanBnXkFtZTgwNzAxOTc1MDI@._V1_UY268_CR16,0,182,268_AL_.jpg" height='150'></a>
+			</div> 
 		</div>
-		<div class='tvrev' id='bachelor'>
-			<a>Link to Bachelor episode review page</a>
-		</div>
-		<div class='tvrev' id='strange'>
-			<a>Link to Stranger Things episode review page</a>
-		</div>
-		<div class='tvrev' id='teenwolf'>
-			<a>Link to Teen Wolf episode review page</a>
-		</div> 
 
 		<hr>
 
 		<div class='category'>
 			<h2 id='videogames'>Video Games</h2>
 		</div>
-		<div class='game'>
-			<h4>Civilization 6:</h4> 
-		</div>
-		<div class='gamerev'> 
-			<p>I have beaten this game a couple times through.  I recently won a domination victory with Rome and a surprise cultural victory with Egypt. </p>
-		</div>
-		<div class='game'>
-			<h4>Final Fantasy XV</h4>
-		</div>
-		<div class='gamerev'>
-			<p>My progrss with this game has only been slow because of the IMMENSE amount of side quests.  My progress on the main quest has been halted at the beginning of Chapter 2.  This game is much better if you have the strategy guide.</p>
+		<div id='gamesrevwrap'>		
+			<div class='gamewrap'>
+				<div class='game'>
+					<h4>Civilization 6:</h4> 
+				</div>
+				<div class='gamerev'> 
+					<p>I have beaten this game a couple times through.  I recently won a domination victory with Rome and a surprise cultural victory with Egypt. </p>
+				</div>
+			</div>
+			<div class='gamewrap'>
+				<div class='game'>
+					<h4>Final Fantasy XV</h4>
+				</div>
+				<div class='gamerev'>
+					<p>My progress with this game has only been slow because of the IMMENSE amount of side quests.  My progress on the main quest has been halted at the beginning of Chapter 2.  This game is much better if you have the strategy guide.</p>
+				</div>
+			</div>
 		</div>
 		<div id='battle'>
-			<a href='/Users/acastonzo/Desktop/FirstgameClassInher.py'>Check out my new command line game, "Battle"</a>
+			<a href='/Users/acastonzo/Desktop/FirstgameClassInher.py'><p>Check out my new command line game, "Battle"<p></a>
 		</div>
 		<div id='newgames'>
-			<p>Table with upcoming games as well as new releases.  Here there will also be a link to play my game, entitled "Battle"</p>
+			<p>Table with upcoming games as well as new releases.</p>
 		</div>
 
 		<hr>
