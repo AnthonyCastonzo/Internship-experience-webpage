@@ -1,6 +1,15 @@
 body {
 	background-color: #35667d;
 }
+#intro {
+	text-align: center;
+	color:#d1daff;
+	margin-top: 28px;
+    margin-bottom: 28px;
+    font-size: 23px;
+    background: url("http://www.fbschedules.com/images/logos/nfl/indianapolis-colts.png");
+    background-size: 30px, 30px
+}
 .category {
 	color:rgba(0, 255, 236, 0.77);
 	font-size: 27px;
@@ -30,13 +39,17 @@ body {
 	display:flex;
 }
 #top5title{
-	color:grey;
+	color:rgb(255, 255, 255);
 	font-size: 20px;
 	margin-bottom: 16px;
 	margin-top: 12px;
 }
 #charinsta {
 	text-align: center;
+	font-family: georgia;
+}
+#charmodel {
+	height:50px;
 }
 #charbottomwrap{
 	margin-top:50px;
@@ -47,6 +60,9 @@ body {
 	height:200px;
 	width:40%;
 	float:left;
+}
+#top5angry {
+	font-style:bold;
 }
 #charlesbooks {
 	font-size: 31px;
@@ -63,11 +79,67 @@ body {
 #movradarwrap {
 	width:70%;
 	float:left;
+	height:260px;
+}
+#radartitle {
+	color:white;
+	margin-top:31px;
+	margin-left:20px;
+	font-size:20px;
+}
+#movradar {
+	margin-top:31px;
 }
 #sequel {
-	margin-left: 70%
+	margin-left: 70%;
+    height: 204px;
+    line-height: 38px;
+    font-size: 17px;
+    margin-top: 78px;
+    text-align: center;
+    margin-right:200px;
+    font-family:arial black;
+    color:white;
 }
-
+#suggestform {
+	font-family:arial;
+	font-weight:bold;
+	color:white;
+	float:left;
+	width:30%;
+	height:200px;
+	line-height: 50px;
+}
+#tvreviews {
+	height:200px;
+}
+.tvrev {
+	height:150px;
+	float:left;
+	margin-left: 60px;
+}
+.gamewrap {
+	width:44%;
+	float:left;
+	margin:0px 15px 20px 15px;
+	height:163px;
+	border:1px solid white;
+	padding-left:15px;
+	padding-right:15px;
+}
+.game {
+	text-align:center;
+	color:white;
+	font-weight: bold;
+}
+.gamerev {
+	font-family:tahoma;
+}
+#battle {
+	color:red;
+	text-align:center;
+	font-size:21px;
+}
 
 table, th, td {border:2px solid grey;}
 
