@@ -31,11 +31,27 @@ body {
 	text-align: center;
 	line-height:55px;
 }
+.active {
+	background-color: white;
+}
 .socialmedia{
 	width:50%;
 	text-align: center;
+	position:relative;
 }
-#smicons {
+.mediacomment {
+	z-index: +1;
+	position:absolute;
+	top:21%;
+	left:70%;
+	display:none;
+	color:white;
+	font-weight:bold;
+}
+.appear {
+	display:block;
+}
+.smicons {
 	display:flex;
 }
 #top5title{
@@ -74,32 +90,76 @@ body {
 }
 #movrevtable {
 	width:100%;
+	background-color:black;
+	color:white;
 }
-
+.slideshowmov{
+	text-align: center;
+	position: relative;
+}
+#prevslide {
+    position: absolute;
+    top: 50%;
+    right: 66%;
+    z-index: +1;
+    height: 44px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#nextslide {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    z-index: +1;
+    height: 44px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
 #movradarwrap {
 	width:70%;
-	float:left;
-	height:260px;
+	height:600px;
+	text-align: center;
+	display:inline-block;
 }
 #radartitle {
 	color:white;
 	margin-top:31px;
-	margin-left:20px;
 	font-size:20px;
+	margin-bottom: 25px;
+}
+.posterbg {
+    background-color: black;
+    width: 44%;
+    display:inline-block;
+}
+.poster {
+    margin-top: 14%;
+    margin-bottom: 14%;
 }
 #movradar {
 	margin-top:31px;
 }
 #sequel {
-	margin-left: 70%;
-    height: 204px;
+    height: 363px;
     line-height: 38px;
     font-size: 17px;
-    margin-top: 78px;
     text-align: center;
-    margin-right:200px;
-    font-family:arial black;
-    color:white;
+    margin-right: 200px;
+    font-family: arial black;
+    color: white;
+    display: inline-block;
+    width: 11%;
+}
+.seqwrap {
+    display: inline-block;
+    height: 600px;
+    vertical-align: middle;
 }
 #suggestform {
 	font-family:arial;
@@ -115,8 +175,8 @@ body {
 }
 .tvrev {
 	height:150px;
-	float:left;
 	margin-left: 60px;
+	float:left;
 }
 
 .gamewrap {

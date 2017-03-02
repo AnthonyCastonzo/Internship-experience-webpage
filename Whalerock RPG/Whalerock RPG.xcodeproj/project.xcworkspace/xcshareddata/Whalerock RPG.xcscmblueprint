@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++21A4C8D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++21A4C8D" : 9223372036854775807,
+    "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++D5BBE86" : 9223372036854775807,
+    "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++5BA86CB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ABEE825A-597B-4D53-A536-80F052F3B895",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++21A4C8D" : "Internship-experience\/",
+    "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++D5BBE86" : "",
+    "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++5BA86CB" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Whalerock RPG",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Whalerock RPG\/Whalerock RPG.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:AnthonyCastonzo\/Internship-experience-webpage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++21A4C8D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AnthonyCastonzo\/Internship-experience-webpage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++5BA86CB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:AnthonyCastonzo\/Internship-experience-webpage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F5BF5F407F4E4DB070005828D12EEAC4C4B7C5F+++D5BBE86"
+    }
+  ]
+}
