@@ -92,7 +92,7 @@ class BattleController: UIViewController {
                         while appDelegate?.gameManager.moveSelected == nil {
 
                         }
-                        print("move set")
+                        print("move is set")
                         print(user1char.turn)
                         print(user1char.turnwait)
                         DispatchQueue.main.async {
@@ -113,7 +113,7 @@ class BattleController: UIViewController {
                         while appDelegate?.gameManager.moveSelected == nil {
 
                         }
-                        print("move set")
+                        print("move is set")
                         print(user2char.turn)
                         print(user2char.turnwait)
                         DispatchQueue.main.async {

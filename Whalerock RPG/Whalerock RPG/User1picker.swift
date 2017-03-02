@@ -40,6 +40,7 @@ extension User1picker: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         (UIApplication.shared.delegate as? AppDelegate)?.gameManager.moveSelected = moves[row]
         print(character.name)
+        print (character.turn)
         if row == 0 {
             character.attack1(target:((UIApplication.shared.delegate as? AppDelegate)?.gameManager.selectedenemy)!)
         }
