@@ -13,6 +13,7 @@ func ==(lhs: Character, rhs: Character) -> Bool {
 }
 
 class Character: Hashable {
+    public weak var pickerview: UIPickerView?
     var id: Int
     var name: String
     var maxhp: Double
@@ -49,12 +50,13 @@ class Character: Hashable {
     
     func setLevel(value: Int) {
         self.level = value
-        (self.maxhp) += Double(value) * (0.10 * (self.maxhp))
-        (self.maxmp) += Double(value) * (0.10 * (self.maxmp))
-        (self.strength) += Double(value) * (0.10 * (self.strength))
-        (self.speed) += Double(value) * (0.10 * (self.speed))
-        (self.magic) += Double(value) * (0.10 * (self.magic))
-        (self.defense) += Double(value) * (0.10 * (self.defense))
+        (self.maxhp) += Double(value - 1) * (0.10 * (self.maxhp))
+        (self.maxmp) += Double(value - 1) * (0.10 * (self.maxmp))
+        (self.strength) += Double(value - 1) * (0.10 * (self.strength))
+        (self.speed) += Double(value - 1) * (0.10 * (self.speed))
+        (self.magic) += Double(value - 1) * (0.10 * (self.magic))
+        (self.defense) += Double(value - 1) * (0.10 * (self.defense))
+        (self.hp) += Double(value - 1) * (0.10 * (self.hp))
     }
     
     func attack1(target: Character) {
@@ -66,7 +68,7 @@ class Character: Hashable {
     }
     
     func attack3(target: Character) {
-        print("nothing")
+
     }
     
     func defend() {

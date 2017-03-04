@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 class Brute: Character {
     init(level: Int){
-        super.init(namecall: "Brute", maxhit_points: 250, maxmana_points: 15, strg: 50, spd: 3, mag: 10, dfense: 5, turn_num: 1, turn_wait: 0, exp: 0, lev: 1, hit_points: 200, id: 3)
+        super.init(namecall: "Brute", maxhit_points: 250, maxmana_points: 15, strg: 50, spd: 3, mag: 10, dfense: 5, turn_num: 1, turn_wait: 0, exp: 0, lev: 1, hit_points: 250, id: 3)
         super.setLevel(value: level)
         self.image = #imageLiteral(resourceName: "Brute")
     }
@@ -45,6 +45,8 @@ class Brute: Character {
         target.hp = target.hp - crushPow
         if crushPow == 0 {
             print("Whiff! You missed!")
+            self.turnwait -= randomDouble(min: 18, max: 20)
+            self.turn += 1
         }
         else {
             print("Crush...\(target.name) lost \(crushPow) HP")
@@ -60,6 +62,7 @@ class Brute: Character {
         print("In the faaaaace! \(target.name) lost \(stompPow) HP")
         self.turn = 0
         self.turnwait -= 22
+        pickerview?.reloadAllComponents()
     }
     
     override func get_attacks() -> [String] {

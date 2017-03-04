@@ -10,14 +10,16 @@ import UIKit
 
 class CharSelectionController: UIViewController {
     
+    @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     var characters: [Character] = [Knight(level: 1), Mage(level: 1), Brute(level: 1)]
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+        startButton.isHidden = true
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,6 +65,12 @@ extension CharSelectionController: UICollectionViewDelegate {
 
             appDelegate?.gameManager.selectedcharacters.fore
   */
+        }
+        if (appDelegate?.gameManager.selectedcharacters.count)! < 2 {
+            startButton.isHidden = true
+        }
+        else {
+            startButton.isHidden = false
         }
         print(appDelegate?.gameManager.selectedcharacters ?? "not available")
     }

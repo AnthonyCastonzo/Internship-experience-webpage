@@ -47,6 +47,7 @@ class Knight: Character {
         print("THWACK!", "\(target.name) lost \(throwPow) HP")
         self.turn = 0
         self.turnwait -= 22
+        pickerview?.reloadAllComponents()
     }
     
     override func get_attacks() -> [String]{

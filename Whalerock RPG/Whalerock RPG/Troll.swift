@@ -10,7 +10,7 @@ import Foundation
 class Enemy: Character {
     init(level: Int){
         let ehp = randomDouble(min: 250, max: 400)
-        super.init(namecall: "Troll", maxhit_points: ehp, maxmana_points: 100, strg: randomDouble(min: 50, max: 80), spd: randomDouble(min: 3.0, max: 5.0), mag: randomDouble(min: 10.0, max: 40.0), dfense: randomDouble(min: 1, max: 5), turn_num: 1, turn_wait: 0, exp: 100, lev: 1, hit_points: ehp, id: 4)
+        super.init(namecall: "Troll", maxhit_points: ehp, maxmana_points: 100, strg: randomDouble(min: 50, max: 80), spd: randomDouble(min: 4.0, max: 6.0), mag: randomDouble(min: 10.0, max: 40.0), dfense: randomDouble(min: 1, max: 5), turn_num: 1, turn_wait: 0, exp: 100, lev: 1, hit_points: ehp, id: 4)
         self.image = #imageLiteral(resourceName: "Troll")
     }
     
