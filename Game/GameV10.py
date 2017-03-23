@@ -90,6 +90,7 @@ class knight(charClass):
         target.hp = target.hp - slashPow  
         print("SLASH!", "%s lost %d HP" %(target.name, slashPow))
         self.turnwait -= random.randint(15, 20)
+        self.turn += 1
 
     def rush(self, target):
         criticalroll = random.randint(0, 100)
@@ -101,6 +102,7 @@ class knight(charClass):
         target.hp = target.hp - rushPow
         print('WHOOSH!! %s lost %d HP' %(target.name, rushPow))
         self.turnwait -= random.randint(12, 15)
+        self.turn += 1
 
     def shieldthrow(self, target):
         throwPow = ((50 - target.defense)/50) * (self.strength * random.uniform(1.20, 1.80))
@@ -116,13 +118,14 @@ class knight(charClass):
 
 class mage(charClass):
     def __init__(self, namecall, maxhit_points, mana_points, strg, spd, mag, dfense, turn_num, turn_wait, exp, lev, hit_points):
-        super().__init__(namecall, maxhit_points, mana_points, strg, spd, mag, dfense, turn_num, turn_wait, exp, lev, hit_points)           
+        super().__init__(namecall, maxhit_points, mana_points, strg, spd, mag, dfense, turn_num, turn_wait, exp, lev, hit_points)          
 
     def fire(self, target):
         firePow = ((50 - target.defense)/50) * (self.magic * random.uniform(0.70, 2.0))
         target.hp = target.hp - firePow
         print("BUUURRRNNN!", "%s lost %d HP" %(target.name, firePow))
         self.turnwait -= random.randint(15, 20)
+        self.turn += 1
 
     def staffwhack(self, target):
         criticalroll = random.randint(1,100)
@@ -134,6 +137,7 @@ class mage(charClass):
         target.hp = target.hp - whackPow
         print("SMACK!", "%s lost %d HP" %(target.name, whackPow))
         self.turnwait -= random.randint(10, 15)
+        self.turn += 1
 
     def cardtrick(self, target): 
         card_chance = random.randint(1, 100)
@@ -170,6 +174,7 @@ class brute(charClass):
         target.hp = target.hp - slamPow
         print('KABOOM! %s lost %d HP' %(target.name, slamPow))
         self.turnwait -= random.randint(15, 20)
+        self.turn += 1
 
     def crush(self, target):
         accuracyroll = random.randint(0, 100)
@@ -184,6 +189,7 @@ class brute(charClass):
         else:
             print("Crush...%s lost %d HP" %(target.name, crushPow))
         self.turnwait -= random.randint(18, 20)
+        self.turn += 1
 
     def facestomp(self, target):
         stompPow = self.strength * 2
@@ -219,6 +225,7 @@ class enemy(charClass):
         user.hp = user.hp - punchPow
         print("Ouch! %s got punched and lost %d HP!" %(user.name, punchPow))
         self.turnwait -= random.randint(12, 18)
+        self.turn += 1
 
     def slap(self, user):
         criticalroll= random.randint(1,100)
@@ -229,7 +236,8 @@ class enemy(charClass):
         slapPow = ((50 - user.defense)/50)*(self.strength * random.uniform(0.3, 1.8) * critical)
         user.hp = user.hp - slapPow
         print("SMACK! %s got slapped and lost %d HP!" %(user.name, slapPow))
-        self.turnwait -= random.randint(11, 16)            
+        self.turnwait -= random.randint(11, 16)
+        self.turn += 1
         
     def get_attacks(self):
         return ['punch', 'slap']
@@ -247,7 +255,7 @@ ehp = random.randint(250, 400)
 BATTLE SYSTEM
 '''
 while True:
-    e1 = enemy('Troll', ehp, 100, random.randint(50, 80), random.randint(3, 5), random.randint(10, 40), random.randint(1, 5), 1, 0, 100, 1, ehp)
+    e1 = enemy("Troll", ehp, 100, random.randint(40, 70), random.randint(3, 5), random.randint(10, 40), random.randint(1, 5), 1, 0, 100, 1, ehp)
     print('%s has attacked!' %(e1.name))
     while True:
         targ = input('Who is your target?:')
@@ -364,7 +372,6 @@ while True:
                 cmd = 'u1.{}(t1)'.format(a)
                 try:
                     eval(cmd)
-                    u1.turn += 1
                 except:
                     print('invalid command')
             elif (u2.turnwait >= 15):
@@ -378,7 +385,6 @@ while True:
                 cmd = 'u2.{}(t1)'.format(a)
                 try:
                     eval(cmd)
-                    u2.turn += 1
                 except:
                     print('invalid command')
             elif t1.turnwait >= 15:
@@ -394,7 +400,6 @@ while True:
                 if attack_targ_roll < 50:
                     cmd ='t1.{}(u2)'.format(attack)
                     eval(cmd)                   
-                t1.turn += 1
             
 
     if (u2.hp > 0 and t1.hp > 0 and u1.hp <= 0):
@@ -412,7 +417,6 @@ while True:
                 cmd = 'u2.{}(t1)'.format(a)
                 try:
                     eval(cmd)
-                    u2.turn += 1
                 except:
                     print('invalid command')
             elif t1.turnwait >= 15:
@@ -423,7 +427,6 @@ while True:
                     attack = 'slap'
                 cmd ='t1.{}(u2)'.format(attack)
                 eval(cmd)                   
-                t1.turn += 1
             
     if (u1.hp > 0 and u2.hp <= 0 and t1.hp > 0):    
         while (u1.hp > 0 and t1.hp > 0):
@@ -440,7 +443,6 @@ while True:
                 cmd = 'u1.{}(t1)'.format(a)
                 try:
                     eval(cmd)
-                    u.turn += 1
                 except:
                     print('invalid command')
             elif t1.turnwait >= 15:
