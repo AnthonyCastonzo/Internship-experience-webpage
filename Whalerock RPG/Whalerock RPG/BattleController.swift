@@ -58,6 +58,7 @@ class BattleController: UIViewController {
         selectedcharacters = (appDelegate?.gameManager.selectedcharacters)!
         user1char = selectedcharacters[selectedcharacters.index(selectedcharacters.startIndex, offsetBy: 0)]
         user2char = selectedcharacters[selectedcharacters.index(selectedcharacters.startIndex, offsetBy: 1)]
+        appDelegate?.gameManager.selectedenemy = Enemy(level: 1)
         enemy1char = (appDelegate?.gameManager.selectedenemy)!
         enemy1.image = enemy1char.image
         user1pickerview = User1picker.init(character: user1char)
@@ -207,7 +208,7 @@ class BattleController: UIViewController {
                         if (attack_roll < 28 && attack_roll >= 0) {
                             enemy1char.slap(user: user2char)
                         }
-                        sleep(2)
+                        sleep(1)
                         DispatchQueue.main.async {
                             if ((attack_roll >= 78) || (attack_roll < 56 && attack_roll >= 28)) {
                                 self.user1HPLoss.text = "\(Int(self.appDelegate!.gameManager.attackPower!))"
@@ -291,7 +292,7 @@ class BattleController: UIViewController {
                         if (attack_roll <= 50 && attack_roll >= 0) {
                             enemy1char.slap(user: user2char)
                         }
-                        sleep(2)
+                        sleep(1)
                         DispatchQueue.main.async {
                             self.user2HPLoss.text = "\(Int(self.appDelegate!.gameManager.attackPower!))"
                             self.user2HPLoss.isHidden = false
@@ -369,7 +370,7 @@ class BattleController: UIViewController {
                         if (attack_roll <= 50 && attack_roll >= 0) {
                             enemy1char.slap(user: user1char)
                         }
-                        sleep(2)
+                        sleep(1)
                         DispatchQueue.main.async {
                             self.user1HPLoss.text = "\(Int(self.appDelegate!.gameManager.attackPower!))"
                             self.user1HPLoss.isHidden = false
