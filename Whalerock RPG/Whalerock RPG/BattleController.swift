@@ -80,6 +80,7 @@ class BattleController: UIViewController {
         enemyHPLoss.isHidden = true
         user1HPLoss.isHidden = true
         user2HPLoss.isHidden = true
+
         
 
 

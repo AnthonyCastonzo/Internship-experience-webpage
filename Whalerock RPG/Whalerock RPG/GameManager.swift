@@ -17,4 +17,5 @@ class GameManager {
     var moveSelected:String?
     var attackPower:Double!
     var attackAnimation:UIImage!
+    var enemyParty: [Character] = []
 }

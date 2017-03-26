@@ -15,9 +15,22 @@ class CharSelectionController: UIViewController {
     var characters: [Character] = [Knight(level: 1), Mage(level: 1), Brute(level: 1)]
     override func viewDidLoad() {
         super.viewDidLoad()
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
         collectionView.dataSource = self
         collectionView.delegate = self
         startButton.isHidden = true
+        let goblinParty = [
+            Goblin(level:1), Goblin(level: 1)
+        ]
+        let trollMinionParty = [
+            Enemy(level: 1), Goblin(level: 1)
+        ]
+        let trollParty = [
+            Enemy(level: 1)
+        ]
+        let enemyParties = [goblinParty, trollMinionParty, trollParty]
+        appDelegate?.gameManager.enemyParty = enemyParties[randomInt(min: 0, max: 2)]
+        print(appDelegate?.gameManager.enemyParty ?? "no party")
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,13 +71,6 @@ extension CharSelectionController: UICollectionViewDelegate {
         else {
             cell?.highlight = false
             let _ = appDelegate?.gameManager.selectedcharacters.remove((cell?.character)!)
-            /*
-            for (index, char) in appDelegate?.gameManager.selectedcharacters{
-            if char.
-            }
-
-            appDelegate?.gameManager.selectedcharacters.fore
-  */
         }
         if (appDelegate?.gameManager.selectedcharacters.count)! < 2 {
             startButton.isHidden = true
